@@ -16,8 +16,8 @@ function HomeMenu() {
 }
 
 const HomeMenuStyled = styled.div`
-  width: 250px;
-  height: 280px;
+  width: ${rem("250px")};
+  height: ${rem("280px")};
   position: fixed;
   bottom: 0px;
   right: 0px;
@@ -27,7 +27,7 @@ const MenuItemStyled = styled.h1`
   font-size: ${rem("25px")};
   letter-spacing: 0.2rem;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: ${rem("20px")};
 `;
 
 const SocialMediaStyled = styled.div`
@@ -37,9 +37,9 @@ const SocialMediaStyled = styled.div`
 `;
 
 const SocialMediaLogo = styled.img`
-  width: 45px;
-  height: 45px;
-  margin-left: 10px;
+  width: ${rem("35px")};
+  height: ${rem("35px")};
+  margin-left: ${rem("16px")};
 `;
 
 export default HomeMenu;
