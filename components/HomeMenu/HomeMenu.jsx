@@ -1,15 +1,37 @@
+import Link from "next/link";
+
 import styled from "styled-components";
 import { rem } from "polished";
 
 function HomeMenu() {
   return (
     <HomeMenuStyled>
-      <MenuItemStyled>ABOUT</MenuItemStyled>
-      <MenuItemStyled>EPISODES</MenuItemStyled>
-      <MenuItemStyled>CONTACT</MenuItemStyled>
+      <MenuItemStyled>
+        <Link href="/about">
+          <a>ABOUT</a>
+        </Link>
+      </MenuItemStyled>
+      <MenuItemStyled>
+        <Link href="/episodes">
+          <a>EPISODES</a>
+        </Link>
+      </MenuItemStyled>
+      <MenuItemStyled>
+        <Link href="/contact">
+          <a>CONTACT</a>
+        </Link>
+      </MenuItemStyled>
       <SocialMediaStyled>
-        <SocialMediaLogo src="/images/instagram.png" />
-        <SocialMediaLogo src="/images/twitter.png" />
+        <Link href="https://instagram.com/thefunkasphere" passHref={true}>
+          <a>
+            <SocialMediaLogo src="/images/instagram.png" />
+          </a>
+        </Link>
+        <Link href="https://twitter.com/thefunkasphere" passHref={true}>
+          <a>
+            <SocialMediaLogo src="/images/twitter.png" />
+          </a>
+        </Link>
       </SocialMediaStyled>
     </HomeMenuStyled>
   );

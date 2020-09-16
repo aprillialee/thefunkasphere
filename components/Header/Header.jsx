@@ -1,10 +1,16 @@
+import Link from "next/link";
+
 import styled from "styled-components";
 import { rem } from "polished";
 
 function Header() {
   return (
     <HeaderStyled>
-      <HeaderTitle>THE FUNKASPHERE</HeaderTitle>
+      <HeaderTitle>
+        <Link href="/">
+          <a>THE FUNKASPHERE</a>
+        </Link>
+      </HeaderTitle>
     </HeaderStyled>
   );
 }
