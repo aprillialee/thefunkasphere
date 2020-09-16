@@ -9,7 +9,7 @@ function Header() {
   );
 }
 
-const HeaderStyled = styled.h1`
+const HeaderStyled = styled.div`
   width: 35%;
   height: 80px;
   position: fixed;
