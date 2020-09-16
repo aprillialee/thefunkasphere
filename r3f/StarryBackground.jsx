@@ -6,7 +6,7 @@ import { OrbitControls, Stars } from "drei";
 function StarryBackground() {
   return (
     <Canvas camera={{ position: [0, 0, 5] }}>
-      <OrbitControls enableZoom="false" />
+      <OrbitControls enableZoom={false} />
       <Stars />
       <mesh>
         <sphereGeometry attach="geometry" args={[2, 32, 32]} />
