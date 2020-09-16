@@ -1,10 +1,15 @@
+import { useRef } from "react";
 import { Canvas } from "react-three-fiber";
+
+import { OrbitControls, Stars } from "drei";
 
 function StarryBackground() {
   return (
     <Canvas camera={{ position: [0, 0, 5] }}>
+      <OrbitControls />
+      <Stars />
       <mesh>
-        <sphereGeometry attach="geometry" args={[0.5, 10, 10]} />
+        <sphereGeometry attach="geometry" args={[2, 32, 32]} />
         <meshBasicMaterial attach="material" color="pink" />
       </mesh>
     </Canvas>
