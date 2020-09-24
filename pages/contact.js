@@ -2,26 +2,39 @@ import Header from "../components/Header/Header";
 import HomeMenu from "../components/HomeMenu/HomeMenu";
 
 import styled from "styled-components";
+import { rem } from "polished";
+
+import React, { useState, useEffect } from "react";
+
+import dynamic from "next/dynamic";
+
+const Background = dynamic(import("../r3f/Background"), {
+  ssr: false,
+});
 
 function Contact() {
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => setHasMounted(true), []);
   return (
     <>
+      {hasMounted && <Background />}
       <Header />
       <HomeMenu />
-      <ContactText>
-        It takes time to harvest The Funk <br /> Check back soon for our first
-        episode
-      </ContactText>
+      <ContactDiv />
     </>
   );
 }
 
-const ContactText = styled.p`
-  text-align: center;
-  margin: 0;
-  line-height: 4rem;
+const ContactDiv = styled.div`
   position: fixed;
-  color: red;
+  top: 120px;
+  left: ${rem("325px")};
+  width: 50%;
+  height: 70%;
+  display: flex;
+  background: #1e272c;
+  opacity: 0.6;
 `;
 
 export default Contact;

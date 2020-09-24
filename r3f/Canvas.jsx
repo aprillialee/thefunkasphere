@@ -1,1 +1,0 @@
-import StarryBackground from "./StarryBackground";

@@ -3,11 +3,23 @@ import HomeMenu from "../components/HomeMenu/HomeMenu";
 
 import styled from "styled-components";
 
+import dynamic from "next/dynamic";
+
+import React, { useState, useEffect } from "react";
+
 import { rem } from "polished";
 
+const Background = dynamic(import("../r3f/Background"), {
+  ssr: false,
+});
+
 function About() {
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => setHasMounted(true), []);
   return (
     <>
+      {hasMounted && <Background />}
       <Header />
       <HomeMenu />
       <AboutStyled>
@@ -34,18 +46,21 @@ function About() {
 }
 
 const AboutStyled = styled.div`
-  margin-top: ${rem("170px")};
+  position: fixed;
+  top: 170px;
+  left: ${rem("325px")};
   width: 50%;
   display: flex;
   justify-content: center;
-  margin-left: ${rem("325px")};
 `;
 
 const AboutSecondParagraph = styled.div`
+  position: fixed;
   width: 50%;
   display: flex;
   justify-content: center;
-  margin-left: ${rem("325px")};
+  top: 300px;
+  left: ${rem("325px")};
 `;
 
 const AboutText = styled.p`
@@ -55,3 +70,5 @@ const AboutText = styled.p`
 `;
 
 export default About;
+//  margin-top: ${rem("170px")};
+//  margin-left: ${rem("325px")};
