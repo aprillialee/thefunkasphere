@@ -23,27 +23,52 @@ function Contact() {
       <HomeMenu />
       <ContactDiv>
         <ContactTitle>Transmit To The Funk Mothership</ContactTitle>
-        <FormDiv>
-          <InputDiv>
-            <InputName type="text" placeholder="First Name" />
-          </InputDiv>
-          <InputDiv>
-            <InputName type="text" placeholder="Second Name" />
-          </InputDiv>
-          <InputEmailDiv>
-            <InputEmail type="email" placeholder="yourname@youremail.com" />
-          </InputEmailDiv>
-          <InputTextDiv>
-            <InputText type="Text" placeholder="Enter your transmission" />
-          </InputTextDiv>
-          <SubmitDiv>
-            <SubmitButton type="button">Submit</SubmitButton>
-          </SubmitDiv>
-        </FormDiv>
+        <Email>Contact us: thefunkasphere@gmail.com</Email>
       </ContactDiv>
     </>
   );
 }
+
+const ContactDiv = styled.div`
+  position: fixed;
+  top: 120px;
+  left: ${rem("365px")};
+  width: 50%;
+  height: 70%;
+  display: flex;
+  display: block;
+`;
+
+const ContactTitle = styled.h2`
+  font-size: 20px;
+  opacity: 1;
+  letter-spacing: 1px;
+  margin: 30px;
+`;
+
+const Email = styled.h2`
+  font-size: 18px;
+  margin: 80px;
+  letter-spacing: 1px;
+`;
+/*
+<FormDiv>
+<InputDiv>
+  <InputName type="text" placeholder="First Name" />
+</InputDiv>
+<InputDiv>
+  <InputName type="text" placeholder="Second Name" />
+</InputDiv>
+<InputEmailDiv>
+  <InputEmail type="email" placeholder="yourname@youremail.com" />
+</InputEmailDiv>
+<InputTextDiv>
+  <InputText type="Text" placeholder="Enter your transmission" />
+</InputTextDiv>
+<SubmitDiv>
+  <SubmitButton type="button">Submit</SubmitButton>
+</SubmitDiv>
+</FormDiv>
 
 const ContactDiv = styled.div`
   position: fixed;
@@ -171,4 +196,5 @@ const InputText = styled.input`
     color: rgb(147, 164, 173);
   }
 `;
+*/
 export default Contact;

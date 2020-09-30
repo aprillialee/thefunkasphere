@@ -24,8 +24,8 @@ function About() {
       <HomeMenu />
       <AboutStyled>
         <AboutText>
-          Recently discovered by NASA, a new atmospheric layer just beyond the
-          stratosphere; <br />
+          A new atmospheric layer just beyond the stratosphere has been
+          discovered; <br />
           THE FUNKASPHERE. For millions of years the funk mothership has been in
           orbit waiting to be tuned into and has only been harvested by the
           greatest minds to have walked the earth. <br />
@@ -33,12 +33,12 @@ function About() {
       </AboutStyled>
       <AboutSecondParagraph>
         <AboutText>
-          Unearth stories of The Funk Pioneers from around the World. Explore
-          the many dimensions of sound; from creators to fanatics, from
-          performers to engineers. The Funkasphere is a podcast that will ignite
-          your right to party, challenge your perceptions on music, and expand
-          your knowledge of sound. Make sure you’ve refuelled your jetpack, its
-          time to initiate launch.
+          Get ready to unearth stories of The Funk Pioneers from around the
+          World. Explore the many dimensions of sound; from creators to
+          fanatics, from performers to engineers. The Funkasphere is a podcast
+          that will ignite your right to party, challenge your perceptions on
+          music, and expand your knowledge of sound. Make sure you’ve refuelled
+          your jetpack, its time to initiate launch.
         </AboutText>
       </AboutSecondParagraph>
     </>
@@ -47,11 +47,13 @@ function About() {
 
 const AboutStyled = styled.div`
   position: fixed;
-  top: 170px;
+  top: 174px;
   left: ${rem("325px")};
   width: 50%;
   display: flex;
   justify-content: center;
+  background: #1e272c;
+  opacity: 0.7;
 `;
 
 const AboutSecondParagraph = styled.div`
@@ -61,6 +63,8 @@ const AboutSecondParagraph = styled.div`
   justify-content: center;
   top: 300px;
   left: ${rem("325px")};
+  background: #1e272c;
+  opacity: 0.7;
 `;
 
 const AboutText = styled.p`
