@@ -45,7 +45,7 @@ const HomeMenuStyled = styled.div`
   right: 0px;
 
   @media (max-width: 700px){
-    top: 68%;
+    top: 80%;
   }
 `;
 
