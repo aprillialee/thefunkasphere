@@ -48,31 +48,53 @@ function About() {
 const AboutStyled = styled.div`
   position: fixed;
   top: 174px;
-  left: ${rem("325px")};
+  left: 20%;
   width: 50%;
   display: flex;
   justify-content: center;
-  background: #1e272c;
-  opacity: 0.7;
+  
+  @media (max-width: 1400px) {
+    top: 190px;
+    left: 13%;
+  }
+
 `;
 
 const AboutSecondParagraph = styled.div`
   position: fixed;
   width: 50%;
+  left: 20%;
+  top: 300px;
   display: flex;
   justify-content: center;
-  top: 300px;
-  left: ${rem("325px")};
-  background: #1e272c;
-  opacity: 0.7;
+
+  @media (max-width: 1400px) {
+    left: 13%;
+  }
+
+  @media (max-width: 700px){
+    top: 320px;
+  }
+
+  @media (max-width: 450px){
+    top: 350px;
+  }
+
+  @media (max-width: 350px){
+    top: 370px;
+  }
+
 `;
 
 const AboutText = styled.p`
   line-height: 2rem;
   text-align: center;
-  font-size: ${rem("15px")};
+  font-size: 15px;
+
+  @media (max-width: 1000px) {
+    font-size: 12px;
+    line-height: 1.1rem;
+  }
 `;
 
 export default About;
-//  margin-top: ${rem("170px")};
-//  margin-left: ${rem("325px")};
