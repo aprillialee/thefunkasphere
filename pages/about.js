@@ -48,12 +48,12 @@ function About() {
 const AboutStyled = styled.div`
   position: fixed;
   top: 174px;
-  left: 20%;
+  left: 25%;
   width: 50%;
   display: flex;
   justify-content: center;
-  
-  @media (max-width: 1400px) {
+
+  @media (max-width: 1000px) {
     top: 190px;
     left: 13%;
   }
@@ -63,12 +63,12 @@ const AboutStyled = styled.div`
 const AboutSecondParagraph = styled.div`
   position: fixed;
   width: 50%;
-  left: 20%;
+  left: 25%;
   top: 300px;
   display: flex;
   justify-content: center;
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1000px) {
     left: 13%;
   }
 
