@@ -40,9 +40,13 @@ function HomeMenu() {
 const HomeMenuStyled = styled.div`
   width: 250px;
   height: 280px;
-  position: fixed;
+  position: absolute;
   bottom: 0px;
   right: 0px;
+
+  @media (max-width: 700px){
+    top: 68%;
+  }
 `;
 
 const MenuItemStyled = styled.h1`

@@ -56,6 +56,7 @@ const AboutStyled = styled.div`
   @media (max-width: 1000px) {
     top: 190px;
     left: 13%;
+    width: 80%;
   }
 
 `;
@@ -70,20 +71,8 @@ const AboutSecondParagraph = styled.div`
 
   @media (max-width: 1000px) {
     left: 13%;
+    width: 80%;
   }
-
-  @media (max-width: 700px){
-    top: 320px;
-  }
-
-  @media (max-width: 450px){
-    top: 350px;
-  }
-
-  @media (max-width: 350px){
-    top: 370px;
-  }
-
 `;
 
 const AboutText = styled.p`
