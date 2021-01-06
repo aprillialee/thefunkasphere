@@ -45,7 +45,8 @@ const HomeMenuStyled = styled.div`
   right: 0px;
 
   @media (max-width: 700px){
-    top: 80%;
+    width: 150px;
+    height: 250px;
   }
 `;
 
@@ -54,6 +55,10 @@ const MenuItemStyled = styled.h1`
   letter-spacing: 0.2rem;
   text-align: center;
   margin-bottom: 20px;
+
+  @media (max-width: 700px){
+   font-size: 20px;
+  }
 `;
 
 const SocialMediaStyled = styled.div`
@@ -66,6 +71,10 @@ const SocialMediaLogo = styled.img`
   width: 35px;
   height: 35px;
   margin-left: 16px;
+  @media (max-width: 700px){
+   width: 20px;
+   height: 20px;
+  }
 `;
 
 export default HomeMenu;
