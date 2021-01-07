@@ -21,6 +21,9 @@ const HeaderStyled = styled.div`
   position: fixed;
   top: -10px;
   left: 60px;
+  @media (max-width: 768px) {
+    left: 20px;
+  }
 `;
 
 const HeaderTitle = styled.h1`

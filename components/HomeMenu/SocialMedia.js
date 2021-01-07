@@ -31,7 +31,7 @@ const SocialMediaStyled = styled.div`
   flex-direction: row;
 
   @media (max-width: 768px) {
-    left: 70%;
+    left: 65%;
   }
 `;
 
