@@ -34,11 +34,17 @@ function Contact() {
 const ContactDiv = styled.div`
   position: fixed;
   top: 120px;
-  left: ${rem("365px")};
+  left: 365px;
   width: 50%;
   height: 70%;
   display: flex;
   display: block;
+
+  @media (max-width: 768px){
+    top: 160px;
+    left: 50px;
+    width: 80%;
+  }
 `;
 
 const ContactTitle = styled.h2`

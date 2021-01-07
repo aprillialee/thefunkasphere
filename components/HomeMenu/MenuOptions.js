@@ -46,7 +46,7 @@ const MenuItemsStyled = styled.ul`
 `
 
 const MenuItemStyled = styled.li`
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   @media (max-width: 768px) {
     margin-bottom: 100px;
