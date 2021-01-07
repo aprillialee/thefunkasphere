@@ -42,7 +42,7 @@ const ContactDiv = styled.div`
 
   @media (max-width: 768px){
     top: 160px;
-    left: 50px;
+    left: 35px;
     width: 80%;
   }
 `;
@@ -56,7 +56,7 @@ const ContactTitle = styled.h2`
 
 const Email = styled.h2`
   font-size: 18px;
-  margin: 80px;
+  margin: 50px;
   letter-spacing: 1px;
 `;
 
