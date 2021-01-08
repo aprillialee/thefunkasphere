@@ -24,7 +24,7 @@ function Contact() {
       <ContactDiv>
         <ContactTitle>Transmit To The Funk Mothership</ContactTitle>
         <Email>
-          Contact us: thefunkasphere@gmail.com or message us on Instagram
+          Contact us: hello@thefunkasphere.com or message us on Instagram
         </Email>
       </ContactDiv>
     </>
