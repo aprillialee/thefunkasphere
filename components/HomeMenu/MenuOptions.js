@@ -46,11 +46,10 @@ const MenuItemsStyled = styled.ul`
 `
 
 const MenuItemStyled = styled.li`
-  margin-bottom: 10px;
+  margin-top: 20px;
 
   @media (max-width: 768px) {
-    margin-bottom: 100px;
-    margin-top: 50px;
+    margin-top: 100px;
   }
 `;
 
